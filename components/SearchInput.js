@@ -7,7 +7,7 @@ export default class SearchInput extends Component {
       <View style={styles.container}>
         <TextInput
           autoCorrect={false}
-          placeholder="Search any city"
+          placeholder={this.props.placeholder}
           placeholderTextColor="white"
           underlineColorAndroid="transparent"
           style={styles.TextInput}
@@ -33,7 +33,13 @@ const styles = StyleSheet.create({
   textInput: {
     flex: 1,
     color: 'white',
-
+    backgroundColor: '#666',
+    height: 40,
+    width: 300,
+    marginTop: 20,
+    marginHorizontal: 20,
+    paddingHorizontal: 10,
+    alignSelf: 'center',
   },
 
 })
