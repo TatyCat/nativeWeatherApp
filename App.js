@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Platform, TextInput, StyleSheet, Text, KeyboardAvoidingView
 } from 'react-native';
+import SearchInput from './components/SearchInput';
 
 export default function App() {
   return (
@@ -14,13 +15,7 @@ export default function App() {
         Light Clouds
         </Text>
       <Text style={[styles.largeText, styles.textStyle]}>24°</Text>
-      <TextInput
-        autoCorrect={false}
-        placeholder="Search any city"
-        placeholderTextColor="white"
-        style={styles.TextInput}
-        clearButtonMode="always"
-      />
+      <SearchInput />
     </KeyboardAvoidingView>
   );
 }
