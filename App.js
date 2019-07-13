@@ -5,7 +5,6 @@ import {
 
 import SearchInput from './components/SearchInput';
 import getWeatherImg from './utils/getWeatherImg';
-import { ContainerTypes } from 'expo-contacts';
 
 
 export default class App extends React.Component {
